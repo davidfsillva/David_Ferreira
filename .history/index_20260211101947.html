@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>David Ferreira | Desenvolvedor Front-end & UI Designer Premium</title>
+
+    <!-- SEO Primário -->
+    <meta name="description" content="David Ferreira é desenvolvedor front-end especializado em interfaces premium, landing pages de alta conversão e experiências digitais modernas.">
+    <meta name="keywords" content="Desenvolvedor Front-end, Web Designer, UI Designer, Landing Page, Desenvolvimento Web, Freelancer Brasil">
+    <meta name="author" content="David Ferreira">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://seudominio.com/">
+
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:title" content="David Ferreira | Desenvolvedor Front-end Premium">
+    <meta property="og:description" content="Interfaces digitais de alto padrão, focadas em performance e conversão.">
+    <meta property="og:image" content="https://seudominio.com/preview.jpg">
+    <meta property="og:url" content="https://seudominio.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="David Ferreira | Web Developer">
+    <meta name="twitter:description" content="Desenvolvimento web premium focado em performance e design moderno.">
+    <meta name="twitter:image" content="https://seudominio.com/preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">PORTFOLIO<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#portfolio">Projetos</a></li>
+            <li><a href="#contact" class="btn-sm">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">Disponível para novos projetos</span>
+
+            <h1>
+                Transformando código em 
+                <span>experiências digitais</span> de elite.
+            </h1>
+
+            <p>
+                Desenvolvedor Front-end especializado em interfaces de alto padrão para marcas globais.
+            </p>
+
+            <div class="hero-btns">
+                <a href="#portfolio" class="btn-primary">Ver Projetos</a>
+                <a href="#contact" class="btn-secondary">Let's Talk</a>
+            </div>
+        </div>
+
+        <!-- Visual direito -->
+        <div class="hero-visual">
+            <div class="hero-glow"></div>
+        </div>
+    </section>
+
+    <!-- PORTFÓLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="section-header">
+            <h2>Projetos Selecionados</h2>
+            <p>Uma vitrine de soluções focadas em performance e design.</p>
+        </div>
+
+        <div class="portfolio-grid">
+
+            <!-- Projeto 1 -->
+            <div class="project-card" onclick="openModal(0)">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+                         alt="Nexus Platform">
+                    <div class="card-overlay">
+                        <span>Ver Detalhes</span>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Nexus Platform</h3>
+                    <p>SaaS Landing Page</p>
+                </div>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="project-card" onclick="openModal(1)">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&q=80&w=800"
+                         alt="Vogue E-commerce">
+                    <div class="card-overlay">
+                        <span>Ver Detalhes</span>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Vogue E-commerce</h3>
+                    <p>Premium Fashion Store</p>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="project-card" onclick="openModal(2)">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=800"
+                         alt="Crypto Dashboard">
+                    <div class="card-overlay">
+                        <span>Ver Detalhes</span>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Crypto Dashboard</h3>
+                    <p>Fintech Solution</p>
+                </div>
+            </div>
+
+                        <!-- Projeto 4 -->
+            <div class="project-card" onclick="openModal(2)">
+                <div class="card-image">
+                    <img src="img/adv.png"
+                         alt="Crypto Dashboard">
+                    <div class="card-overlay">
+                        <span>Ver Detalhes</span>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Crypto Dashboard</h3>
+                    <p>Fintech Solution</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+
+            <div class="modal-body">
+                <div class="modal-img" id="modalImg"></div>
+
+                <div class="modal-text">
+                    <h2 id="modalTitle">Nome do Projeto</h2>
+                    <p id="modalDesc">Descrição detalhada aqui...</p>
+
+                    <div class="tech-tags" id="modalTech"></div>
+
+                    <div class="modal-actions">
+                        <a href="#" class="btn-primary">Visitar Website</a>
+                        <a href="https://wa.me/5599999999999" target="_blank" class="btn-secondary">
+                            Solicitar Similar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <section id="contact" class="cta-section">
+        <h2>Pronto para elevar seu nível digital?</h2>
+        <p>Estou pronto para transformar sua ideia em uma interface de classe mundial.</p>
+
+        <a href="https://wa.me/5599999999999" target="_blank" class="btn-whatsapp">
+            Iniciar Conversa no WhatsApp
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Developer Premium. Todos os direitos reservados.</p>
+
+            <div class="social-links">
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>
