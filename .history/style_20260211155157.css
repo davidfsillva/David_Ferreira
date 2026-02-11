@@ -429,18 +429,18 @@ footer {
 
 .footer-content p {
   color: var(--text-dark);
-  font-weight: 450;
+  font-weight: 500;
   font-size: 1rem;
 }
 
 .social-links {
   display: flex;
-  gap: 1rem; /* distância entre ícones */
+  gap: 1.5rem; /* distância entre ícones */
 }
 
 .social-links a {
   color: var(--primary);
-  padding: 0.6rem;
+  padding: 0.8rem;
   border-radius: 30%; /* círculo perfeito */
   font-size: 1.2rem;
   display: flex;
@@ -531,64 +531,32 @@ footer {
 }
 
 /* RESPONSIVO */
-/* =====================
-   RESPONSIVIDADE
-===================== */
-
-/* Para telas até 900px */
 @media (max-width: 900px) {
-  html, body {
-    overflow-x: hidden; /* remove rolagem lateral */
-  }
-
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 100px 5% 60px; /* garante espaçamento interno */
-    width: 100%; /* força largura total */
   }
 
-  .hero-left,
-  .hero-right,
   .hero-visual {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto; /* centraliza horizontalmente */
+    margin-top: 3rem;
   }
 
   .hero-btns {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; /* garante alinhamento vertical */
     gap: 1rem;
     flex-wrap: wrap;
-    margin: 0 auto;
   }
 
-  .hero-btns a {
+    .hero-btns a {
     margin: 0; /* remove margens extras que possam deslocar os botões */
-  }
-
-  .portfolio,
-  .cta-section {
-    padding: 4rem 5%;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
   }
 }
 
-/* Para telas até 600px */
 @media (max-width: 600px) {
-  html, body {
-    overflow-x: hidden; /* garante sem scroll lateral */
-  }
-
   .navbar {
     padding: 1rem 5%;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
   }
 
   .nav-links {
@@ -596,42 +564,34 @@ footer {
   }
 
   .hero {
-    padding: 80px 5% 40px;
-    width: 100%;
+    padding: 100px 5% 60px;
   }
 
-  .hero-btns {
-    justify-content: center;
-    gap: 1rem;
+    .hero-btns {
+    justify-content: center; /* centraliza horizontalmente */
+    gap: 1rem; /* mantém espaçamento entre os botões */
     flex-wrap: wrap;
   }
 
-  .portfolio,
+
+  .portfolio {
+    padding: 4rem 5%;
+  }
+
   .cta-section {
-    padding: 3rem 5%;
+    padding: 4rem 5%;
   }
 
   footer {
     padding: 2rem 5%;
-    width: 100%;
   }
 
   .footer-content {
     flex-direction: column;
     text-align: center;
-    width: 100%;
   }
 
   .social-links a {
     margin: 0 0.5rem;
-  }
-
-  /* imagens e vídeos dentro do hero */
-  .hero img,
-  .hero video {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
   }
 }
