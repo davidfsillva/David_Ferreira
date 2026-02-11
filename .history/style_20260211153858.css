@@ -428,7 +428,6 @@ footer {
 }
 
 .footer-content p {
-  color: var(--text-dark);
   font-weight: 500;
   font-size: 1rem;
 }
@@ -452,7 +451,8 @@ footer {
 
 .social-links a:hover {
   transform: translateY(-3px) scale(1.1);
-  color: var(--primary);
+  background: var(--primary);
+  color: white;
 }
 
 

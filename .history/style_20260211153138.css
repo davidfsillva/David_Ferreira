@@ -411,8 +411,11 @@ body {
 }
 
 /* FOOTER */
+/* =====================
+   FOOTER MODERNO
+===================== */
 footer {
-  padding: 3rem 5%;
+  padding: 4rem 8%;
   background: linear-gradient(135deg, #eef2ff, #ffffff); /* leve gradiente */
   border-top: 1px solid rgba(99,102,241,0.2); /* linha discreta */
   text-align: center;
@@ -452,7 +455,8 @@ footer {
 
 .social-links a:hover {
   transform: translateY(-3px) scale(1.1);
-  color: var(--primary);
+  background: var(--primary);
+  color: white;
 }
 
 

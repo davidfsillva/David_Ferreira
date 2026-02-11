@@ -190,8 +190,6 @@ body {
   border: 1px solid #e5e7eb;
   color: var(--text-dark);
   margin-left: 1rem;
-  box-shadow: 0 5px 25px rgba(99,102,241,0.3);
-
 }
 
 .btn-secondary:hover {
@@ -204,17 +202,12 @@ body {
 }
 
 .btn-whatsapp {
-  background: linear-gradient(90deg, #25d366, #1ebe57);
+  background: #25d366;
   color: white;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: var(--transition);
 }
 
 .btn-whatsapp:hover {
-  transform: translateY(-3px) scale(1.03);
-  box-shadow: 0 8px 20px rgba(37,211,102,0.4);
+  transform: translateY(-4px) scale(1.03);
 }
 
 .btn-whatsapp:active {
@@ -411,8 +404,11 @@ body {
 }
 
 /* FOOTER */
+/* =====================
+   FOOTER MODERNO
+===================== */
 footer {
-  padding: 3rem 5%;
+  padding: 4rem 8%;
   background: linear-gradient(135deg, #eef2ff, #ffffff); /* leve gradiente */
   border-top: 1px solid rgba(99,102,241,0.2); /* linha discreta */
   text-align: center;
@@ -441,18 +437,19 @@ footer {
 .social-links a {
   color: var(--primary);
   padding: 0.8rem;
-  border-radius: 30%; /* círculo perfeito */
+  border-radius: 50%; /* círculo perfeito */
   font-size: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
-  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(99,102,241,0.15); /* leve profundidade */
 }
 
 .social-links a:hover {
   transform: translateY(-3px) scale(1.1);
-  color: var(--primary);
+  background: var(--primary);
+  color: white;
 }
 
 
@@ -541,12 +538,9 @@ footer {
     margin-top: 3rem;
   }
 
-    .hero-btns {
-    justify-content: center; /* centraliza horizontalmente */
-    gap: 1rem; /* mantém espaçamento entre os botões */
-    flex-wrap: wrap;
+  .modal-body {
+    grid-template-columns: 1fr;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -561,13 +555,6 @@ footer {
   .hero {
     padding: 100px 5% 60px;
   }
-
-    .hero-btns {
-    justify-content: center; /* centraliza horizontalmente */
-    gap: 1rem; /* mantém espaçamento entre os botões */
-    flex-wrap: wrap;
-  }
-
 
   .portfolio {
     padding: 4rem 5%;

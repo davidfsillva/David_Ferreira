@@ -297,10 +297,11 @@ body {
 .hero-glow {
   width: 380px;
   height: 380px;
-  background: url('img/dashboard.png') no-repeat center center;
+  background: url('img/') no-repeat center center;
   background-size: contain;
   animation: float-rotate 8s ease-in-out infinite;
 }
+
 
 @keyframes float-rotate {
   0%   { transform: translateY(0px) rotate(0deg); }
